@@ -1,3 +1,5 @@
+@import '../../node_modules/vanilla-infinite-marquee/infinite-marquee.css';
+
 /* Fonts */
 
 @import url(../fonts/fonts.css);
@@ -11,3 +13,787 @@
 
 @import url(../css/utils/variables.css);
 @import url(../css/utils/common.css);
+
+/* header */
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  max-width: 430px;
+  margin: 0 auto;
+
+  background-image: url(../img/header/background-1x.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header {
+    background-image: url(../img/header/background-2x.jpg);
+  }
+}
+
+.header .title-container {
+  margin-bottom: 8px;
+}
+
+.header .title {
+  position: relative;
+
+  color: #101010;
+  font-family: 'Snell Roundhand';
+  font-size: 69px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.header .subtitle {
+  margin-top: -24px;
+
+  color: #84abff;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 45.199px */
+  letter-spacing: -0.452px;
+}
+
+.header .desc {
+  color: #090909;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 18px */
+  letter-spacing: -0.18px;
+
+  max-width: 283px;
+  margin: 0 auto 280px auto;
+}
+
+.header .wrapper {
+  position: relative;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #84abff;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+
+  max-width: 274px;
+  margin: 0 auto;
+}
+
+.header .image {
+  position: absolute;
+  top: -16px;
+  left: 16px;
+}
+
+.header .text {
+  color: #090909;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 13px */
+  letter-spacing: -0.13px;
+}
+
+/* what-gonna */
+
+.what-gonna {
+  background: #eef3ff;
+}
+
+.what-gonna .title-container {
+  margin-bottom: 20px;
+}
+
+.what-gonna .title {
+  position: relative;
+  color: #101010;
+  text-align: center;
+  font-family: 'Snell Roundhand';
+  font-size: 57.465px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90%; /* 51.718px */
+  text-transform: lowercase;
+}
+
+.what-gonna .subtitle {
+  margin-top: -10px;
+  color: #84abff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 43.099px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 43.099px */
+  letter-spacing: -0.431px;
+  text-transform: lowercase;
+}
+
+.what-gonna .list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.what-gonna .list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.what-gonna .short-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px 12px;
+  border-radius: 10px;
+  background: #fff;
+  backdrop-filter: blur(5px);
+}
+
+.what-gonna .short-box .text {
+  color: #090909;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 15.4px */
+  letter-spacing: -0.14px;
+}
+
+.what-gonna .list-item:nth-child(2) .short-box .text {
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.what-gonna .long-box {
+  padding: 20px 24px;
+  border-radius: 10px;
+  background: #d4e1ff;
+}
+
+.what-gonna .long-box .text {
+  color: #090909;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 15.4px */
+  letter-spacing: -0.14px;
+}
+
+.help-future-container {
+  position: relative;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.help-future-container .text {
+  color: #090909;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 21.6px */
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+}
+
+.help-future-container span {
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  color: #5b89ed;
+  font-family: 'Snell Roundhand';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90%; /* 43.2px */
+  text-transform: lowercase;
+}
+
+/* forecast-count */
+
+.forecast-count {
+  background-image: url(../img/forecast-count/bg-1x.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-bottom: 80px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .forecast-count {
+    background-image: url(../img/forecast-count/bg-2x.jpg);
+  }
+}
+
+.forecast-count .desc {
+  padding-top: 380px;
+
+  color: #090909;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 18.4px */
+  letter-spacing: -0.16px;
+}
+
+.forecast-count .accent {
+  margin-top: -30px;
+
+  color: #5b89ed;
+  text-align: center;
+  font-family: 'Snell Roundhand';
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90%; /* 72px */
+  text-transform: lowercase;
+
+  margin-bottom: 60px;
+}
+
+.forecast-count .wrapper {
+  padding: 16px;
+  border-radius: 10px;
+  background: #e5edff;
+  backdrop-filter: blur(5px);
+}
+
+.forecast-count .dates {
+  color: #090909;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%; /* 23px */
+  letter-spacing: -0.2px;
+
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.forecast-count .dates span {
+  font-weight: 600;
+}
+
+/* about-forescasts */
+
+.about-forecasts {
+  padding-bottom: 125px;
+}
+
+.about-forecasts .container {
+  padding: 0;
+  max-width: 430px;
+}
+
+.about-forecasts .list {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.about-forecasts .list-item {
+}
+
+.about-forecasts .title-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+  background: #d8b48b;
+
+  margin-bottom: 12px;
+}
+
+.about-forecasts .item-title {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 115%; /* 23px */
+  letter-spacing: -0.2px;
+
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  padding: 24px 16px;
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #f4eadf;
+}
+
+.about-forecasts .list-item:last-child .item-content {
+  padding: 16px;
+}
+
+.item-content .title {
+  color: #bf925f;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 115%; /* 18.4px */
+  letter-spacing: -0.16px;
+  margin-bottom: 8px;
+}
+
+.item-content .content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.item-content .content-item {
+  color: #090909;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: -0.14px;
+}
+
+.item-content .content-item span {
+  font-weight: 600;
+}
+
+.item-content .additionally {
+  color: #090909;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 115%; /* 16.1px */
+  letter-spacing: -0.14px;
+
+  padding-left: 4px;
+}
+
+.item-content .wrapper {
+  margin-top: 8px;
+
+  padding: 16px 0;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.item-content .wrapper .text {
+  color: #090909;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 115%; /* 14.95px */
+  letter-spacing: -0.13px;
+}
+
+/* buy-section */
+
+.buy-section {
+  padding-bottom: 50px;
+}
+
+.buy-section .buy-list {
+  margin-bottom: 40px;
+}
+
+.buy-section .list-item::after {
+  content: '';
+  display: block;
+
+  height: 2px;
+  width: 100%;
+  background: #d4e1ff;
+
+  margin: 50px auto;
+}
+
+.buy-section .list-item:last-child:after {
+  display: none;
+}
+
+.buy-section .item-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(181, 205, 255, 0.7);
+
+  margin-bottom: 8px;
+}
+
+.buy-section .list-item:last-child .item-box {
+  background: rgba(216, 180, 139, 0.4);
+  justify-content: space-between;
+}
+
+.buy-section .name {
+  color: #090909;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 19.5px */
+
+  max-width: 190px;
+}
+
+.buy-section .list-item:last-child .name {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.buy-section .price {
+  color: #84abff;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 46.8px */
+}
+
+.buy-section .list-item:last-child .price {
+  color: #d1a776;
+}
+
+.buy-section .buy-btn {
+  display: block;
+
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 20.8px */
+
+  padding: 16px;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+
+  border-radius: 110px;
+  background: #5b89ed;
+}
+
+.buy-section .list-item:last-child .buy-btn {
+  background: #d1a776;
+}
+
+.timer-text {
+  color: #5b89ed;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%; /* 18.7px */
+  letter-spacing: -0.34px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* timer */
+
+.countdown {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.countdown-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-time {
+  display: block;
+  color: #090909;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  width: 50px;
+}
+
+.countdown-doubledot {
+  content: '';
+  display: flex;
+  height: 30px;
+  width: 1px;
+  background: #090909;
+  margin: 0 auto;
+}
+
+.countdown-label {
+  color: #090909;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.24px;
+
+  margin-top: -6px;
+}
+
+/* access */
+
+.access-section {
+  background: #eef3ff;
+}
+
+.access-section .title-container {
+  margin-bottom: 30px;
+}
+
+.access-section .title {
+  color: #5b89ed;
+  font-family: 'Snell Roundhand';
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90%; /* 99px */
+  text-transform: lowercase;
+}
+
+.access-section .subtitle {
+  margin-top: -20px;
+
+  color: #090909;
+  font-family: Montserrat;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 27.3px */
+}
+
+.access-section .access-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.access-section .list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 20px 14px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.access-section .name {
+  color: #090909;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 16.8px */
+
+  max-width: 172px;
+}
+
+.access-section .time-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px 8px;
+  border-radius: 5px;
+  background: #5b89ed;
+}
+
+.access-section .time {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 20.8px */
+}
+
+/* footer */
+
+.footer {
+  position: relative;
+}
+
+.container {
+}
+
+.footer .text-container {
+  margin-bottom: 18px;
+}
+
+.footer .accent-text {
+  color: #d1a776;
+  text-align: center;
+  font-family: 'Snell Roundhand';
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90%; /* 54px */
+  text-transform: lowercase;
+}
+
+.footer .text {
+  color: #090909;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 20.8px */
+
+  max-width: 272px;
+  margin: -10px auto 0 auto;
+}
+
+.footer .image-container {
+  position: relative;
+
+  height: 185px;
+
+  margin-bottom: 50px;
+}
+
+.footer .memoji-image {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  transform: translate(-50%);
+}
+
+.footer .heart {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.support-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px;
+  border-radius: 110px;
+  background: rgba(132, 171, 255, 0.4);
+
+  color: #090909;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 18.2px */
+  text-decoration-line: underline;
+
+  max-width: 280px;
+  margin: 0 auto 100px auto;
+}
+/* marueq */
+
+.marquee-container {
+  position: absolute;
+  left: 0;
+  top: 336px;
+
+  background: #5b89ed;
+  padding: 6px;
+
+  transform: rotate(2deg);
+}
+
+.marquee-text {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 19.5px */
+  text-transform: uppercase;
+}
+
+/* disigner */
+
+.disigner-link {
+}
+
+.disigner-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.disigner-text {
+  color: #090909;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%; /* 14.95px */
+  letter-spacing: -0.39px;
+  text-transform: uppercase;
+
+  max-width: 121px;
+}
+
+.disigner-text span {
+  color: #d8b48b;
+}

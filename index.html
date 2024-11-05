@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Прогноз на 2025 год</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -11,10 +17,448 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <div class="title-container">
+          <h1 class="title">Прогноз</h1>
+          <p class="subtitle">на 2025 год</p>
+        </div>
+        <p class="desc">
+          Будьте готовы к событиям 2025 года, о которых другие даже не
+          догадываются
+        </p>
+        <div class="wrapper">
+          <picture
+            ><source
+              srcset="
+                ./src/img/header/wrapper-image-1x.png 1x,
+                ./src/img/header/wrapper-image-2x.png 2x
+              "
+              width="35"
+              height="auto" />
+            <img
+              class="image"
+              src="./src/img/header/wrapper-image-1x.png"
+              alt="image"
+              width="35"
+              height="auto"
+          /></picture>
+          <p class="text">
+            Мой прогноз поможет вам обрести уверенность, предвидеть важные
+            моменты и подготовиться!
+          </p>
+        </div>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="what-gonna section">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="title">Что принесёт</h2>
+            <p class="subtitle">2025-й?</p>
+          </div>
+          <ul class="list">
+            <li class="list-item">
+              <div class="short-box">
+                <p class="text">
+                  "2025 год — решающий момент для мира и каждого из нас. Год
+                  завершения, перемен и новых возможностей!"
+                </p>
+              </div>
+              <div class="long-box">
+                <p class="text">
+                  2025 год обещает быть уникальным: мир проживает девятый цикл —
+                  завершающий и революционный этап, который закрывает последний
+                  девятилетний период <br />
+                  <br />
+                  В этот год мы подведем итоги, завершим важные дела и
+                  приготовимся к новым начинаниям <br /><br />
+                  Этот этап принесет как вызовы, так и возможность достичь
+                  глубоких результатов, если знать, как правильно действовать
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="short-box">
+                <p class="text">
+                  Самые кармические планеты — Юпитер, Сатурн, Раху и Кету — все
+                  меняют свое положение в течение 2025 года
+                </p>
+              </div>
+              <div class="long-box">
+                <p class="text">
+                  Эти перемены влияют на глобальные процессы, жизнь общества и
+                  каждого человека <br /><br />
+                  Последний раз Сатурн и Раху с Кету меняли свое положение
+                  только в 2023 году, но в этот раз все четыре планеты начнут
+                  новый цикл одновременно, создавая уникальные условия для
+                  перемен и трансформаций <br />
+                  <br />
+                  Эти изменения затронут как мировую сцену, так и наши личные
+                  пути, и подготовка к ним поможет воспользоваться шансами и
+                  пройти сложные этапы с наибольшей пользой
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="help-future-container">
+            <p class="text">Позаботьтесь о своем будущем</p>
+            <span>заранее!</span>
+          </div>
+        </div>
+      </section>
+      <section class="forecast-count section">
+        <div class="container">
+          <p class="desc">
+            Прогноз по месяцам и дням позволит четче видеть картину года,
+            избежать непредвиденных событий и сделать лучшие шаги для личного
+          </p>
+          <p class="accent">успеха</p>
+          <div class="wrapper">
+            <p class="dates">
+              Я проведу три глубоких вебинара <br />
+              <br />
+              <span>7, 14, 21 декабря</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about-forecasts">
+        <div class="container">
+          <ul class="list">
+            <li class="list-item">
+              <div class="title-box">
+                <p class="item-title">Прогноз – планирование 2025 года</p>
+              </div>
+              <div class="item-content">
+                <p class="title">На вебинаре мы рассмотрим:</p>
+                <ul class="content-list">
+                  <li class="content-item">
+                    <span>Обзор энергетики каждого месяца:</span> как
+                    планетарные аспекты и транзиты влияют на общую атмосферу
+                    каждого месяца
+                  </li>
+                  <li class="content-item">
+                    <span>Важные даты:</span> ключевые дни для принятия решений,
+                    запуска проектов или личного роста (ретроградные периоды,
+                    затмения)
+                  </li>
+                  <li class="content-item">
+                    <span>Советы на каждый день:</span> краткие рекомендации на
+                    каждый день или важные периоды месяца, чтобы планировать
+                    свою жизнь более осознанно
+                  </li>
+                </ul>
+                <p class="additionally">Дополнительно:</p>
+                <ul class="content-list">
+                  <li class="content-item">
+                    Влияние на финансовые и карьерные аспекты
+                  </li>
+                  <li class="content-item">Важные периоды для здоровья</li>
+                  <li class="content-item">
+                    Личные рекомендации для улучшения отношений в течение года
+                  </li>
+                </ul>
+                <ul class="content-list">
+                  <li class="content-item">
+                    <span>Участие онлайн с возможностью задавать вопросы</span>
+                  </li>
+                  <li class="content-item">
+                    <span>Доступ к записи вебинара от 2 месяцев</span>
+                  </li>
+                </ul>
+                <div class="wrapper">
+                  <p class="text">
+                    На протяжении всего года вы будете чувствовать себя в
+                    безопасности, понимая тенденцию каждого месяца!!!
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="title-box">
+                <p class="item-title">
+                  Прогноз для всех знаков зодиака на 2025 год
+                </p>
+              </div>
+              <div class="item-content">
+                <p class="title">На вебинаре мы рассмотрим:</p>
+                <ul class="content-list">
+                  <li class="content-item">
+                    <span>Общие тенденции:</span> для каждого знака зодиака
+                    главные вызовы и возможности на 2025 год
+                  </li>
+                  <li class="content-item">
+                    <span>Карьера и финансы:</span> прогноз на успех в
+                    профессиональной деятельности, наилучшие моменты для
+                    инвестиций и карьерного роста
+                  </li>
+                  <li class="content-item">
+                    <span>Отношения и любовь:</span> прогноз о личных
+                    взаимоотношениях, как любовных, так и дружеских или семейных
+                  </li>
+                  <li class="content-item">
+                    <span>Здоровье и благополучие:</span> рекомендации по уходу
+                    за своим здоровьем в зависимости от знака
+                  </li>
+                  <li class="content-item">
+                    <span>Вопросы духовного развития:</span> как каждый знак
+                    может раскрыть свои внутренние ресурсы и использовать год
+                    для духовного роста
+                  </li>
+                </ul>
+                <ul class="content-list">
+                  <li class="content-item">
+                    <span>Участие онлайн с возможностью задавать вопросы</span>
+                  </li>
+                  <li class="content-item">
+                    <span>Доступ к записи вебинара от 2 месяцев</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="title-box">
+                <p class="item-title">Прогноз для Украины на 2025 год</p>
+              </div>
+              <div class="item-content">
+                <p class="title">На вебинаре мы рассмотрим:</p>
+                <ul class="content-list">
+                  <li class="content-item">
+                    <span>Общие астрологические тенденции для страны:</span> на
+                    основе анализа гороскопа страны - основные политические и
+                    социальные вызовы
+                  </li>
+                  <li class="content-item">
+                    <span>Экономические тенденции:</span> возможные изменения в
+                    экономике и влияния мировых процессов на Украину
+                  </li>
+                  <li class="content-item">
+                    <span>Важные даты для страны:</span> периоды, когда можно
+                    ожидать значительных изменений или событий
+                  </li>
+                  <li class="content-item">
+                    <span
+                      >Политическая обстановка и международные отношения:</span
+                    >
+                    на основе астрологических данных оценим перспективу
+                    международных отношений Украины в 2025 году
+                  </li>
+                  <li class="content-item">
+                    <span>Советы для граждан:</span> рекомендации для людей на
+                    основе общих тенденций — как адаптироваться к возможным
+                    вызовам
+                  </li>
+                </ul>
+                <ul class="content-list">
+                  <li class="content-item">
+                    <span>Участие онлайн с возможностью задавать вопросы</span>
+                  </li>
+                  <li class="content-item">
+                    <span>Доступ к записи вебинара от 2 месяцев</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="title-box">
+                <p class="item-title">Индивидуальные рекомендации</p>
+              </div>
+              <div class="item-content">
+                <p class="title">
+                  на 2025 год по вашей натальной карте (аудиозапись 30 минут)
+                </p>
+                <ul class="content-list">
+                  <li class="content-item">
+                    <span>Ваш персональный компас для достижения целей!</span>
+                    Такой прогноз уникален, потому что он учитывает время и
+                    место рождения каждого человека, что позволяет создать
+                    точный и детализированный план на год
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="title-box">
+                <p class="item-title">Печатный календарь на 2025 год</p>
+              </div>
+              <div class="item-content">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/calendar-1x.png 1x,
+                      ./src/img/calendar-2x.png 2x
+                    "
+                    width="288"
+                    height="204" />
+                  <img
+                    class="image"
+                    src="./src/img/calendar-1x.png"
+                    alt="image"
+                    width="288"
+                    height="204"
+                /></picture>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="buy-section">
+        <div class="container">
+          <ul class="buy-list">
+            <li class="list-item">
+              <div class="item-box">
+                <p class="name">Прогноз-планирование 2025</p>
+                <p class="price">79$</p>
+              </div>
+              <a class="buy-btn" href="" target="_blank" rel="nofollow"
+                >КУПИТЬ</a
+              >
+            </li>
+            <li class="list-item">
+              <div class="item-box">
+                <p class="name">Прогноз для знаков 2025</p>
+                <p class="price">79$</p>
+              </div>
+              <a class="buy-btn" href="" target="_blank" rel="nofollow"
+                >КУПИТЬ</a
+              >
+            </li>
+            <li class="list-item">
+              <div class="item-box">
+                <p class="name">Печатный лунный календарь на 2025</p>
+                <p class="price">30$</p>
+              </div>
+              <a class="buy-btn" href="" target="_blank" rel="nofollow"
+                >КУПИТЬ</a
+              >
+            </li>
+            <li class="list-item">
+              <div class="item-box">
+                <p class="name">Индивидуальные рекомендации на 2025</p>
+                <p class="price">199$</p>
+              </div>
+              <a class="buy-btn" href="" target="_blank" rel="nofollow"
+                >КУПИТЬ</a
+              >
+            </li>
+            <li class="list-item">
+              <div class="item-box">
+                <p class="name">Всё включено</p>
+                <p class="price">350$</p>
+              </div>
+              <a class="buy-btn" href="" target="_blank" rel="nofollow"
+                >КУПИТЬ</a
+              >
+            </li>
+          </ul>
+          <p class="timer-text">повышение цены через:</p>
+          <div id="countdown-one" class="countdown">
+            <div class="countdown-number">
+              <span class="days countdown-time"></span>
+              <div class="countdown-label days-label"></div>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="hours countdown-time"></span>
+              <div class="countdown-label hours-label"></div>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+              <div class="countdown-label minutes-label"></div>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+              <div class="countdown-label seconds-label"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="access-section section">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="title">Доступ</h2>
+            <p class="subtitle">к материалам</p>
+          </div>
+          <ul class="access-list">
+            <li class="list-item">
+              <p class="name">При покупке одного вебинара</p>
+              <div class="time-container"><p class="time">2 месяца</p></div>
+            </li>
+            <li class="list-item">
+              <p class="name">При покупке двух вебинаров</p>
+              <div class="time-container"><p class="time">4 месяца</p></div>
+            </li>
+            <li class="list-item">
+              <p class="name">
+                При покупке трех вебинаров или тарифа “Всё включено”
+              </p>
+              <div class="time-container"><p class="time">12 месяцев</p></div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <footer class="footer section">
+      <div class="container">
+        <div class="text-container">
+          <p class="accent-text">Действуйте</p>
+          <p class="text">
+            уже сегодня, чтобы встретить 2025 год подготовленным и уверенно
+            шагнуть в будущее!
+          </p>
+        </div>
+        <div class="image-container">
+          <picture
+            ><source
+              srcset="
+                ./src/img/footer/memoji-1x.png 1x,
+                ./src/img/footer/memoji-1x.png 2x
+              "
+              width="160"
+              height="160" />
+            <img
+              class="memoji-image"
+              src="./src/img/footer/memoji-1x.png"
+              alt="image"
+              width="160"
+              height="160"
+          /></picture>
+          <img class="heart" src="./src/img/footer/heart.svg" alt="heart" />
+        </div>
+        <a class="support-btn" href="" target="_blank" rel="nofollow"
+          >Связаться с помощником
+          <img
+            src="./src/img/footer/support-arrow.svg"
+            alt="arrow"
+            width="18"
+            height="18"
+        /></a>
+        <a
+          class="disigner-link"
+          href="https://www.instagram.com/lllcku"
+          target="_blank"
+          rel="nofollow"
+          ><div class="disigner-box">
+            <img
+              src="./src/img/footer-insta.svg"
+              alt="instagram"
+              width="25"
+              height="25"
+            />
+            <p class="disigner-text">
+              розробка сайту <span>lisa bardadym</span>
+            </p>
+          </div></a
+        >
+      </div>
+      <div class="marquee-container">
+        <p class="marquee-text">Остались вопросы?</p>
+      </div>
+    </footer>
+    <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/marquee.js" type="module"></script>
   </body>
 </html>
