@@ -175,20 +175,33 @@ function initializeClock(id, endtime) {
     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-    daysLabel.innerHTML = declensionNum(t.days, ['день', 'дні', 'днів']);
-    hoursLabel.innerHTML = declensionNum(t.hours, [
-      'година',
-      'години',
-      'годин',
-    ]);
+    // daysLabel.innerHTML = declensionNum(t.days, ['день', 'дні', 'днів']);
+    // hoursLabel.innerHTML = declensionNum(t.hours, [
+    //   'година',
+    //   'години',
+    //   'годин',
+    // ]);
+    // minutesLabel.innerHTML = declensionNum(t.minutes, [
+    //   'хвилина',
+    //   'хвилини',
+    //   'хвилин',
+    // ]);
+    // secondsLabel.innerHTML = declensionNum(t.seconds, [
+    //   'секунда',
+    //   'секунди',
+    //   'секунд',
+    // ]);
+
+    daysLabel.innerHTML = declensionNum(t.days, ['день', 'дня', 'дней']);
+    hoursLabel.innerHTML = declensionNum(t.hours, ['час', 'часа', 'часов']);
     minutesLabel.innerHTML = declensionNum(t.minutes, [
-      'хвилина',
-      'хвилини',
-      'хвилин',
+      'минута',
+      'минуты',
+      'минут',
     ]);
     secondsLabel.innerHTML = declensionNum(t.seconds, [
       'секунда',
-      'секунди',
+      'секунды',
       'секунд',
     ]);
 
