@@ -383,8 +383,14 @@
   background: #f4eadf;
 }
 
+.item-content .image {
+  display: block;
+  margin: 0 auto;
+}
+
 .about-forecasts .list-item:last-child .item-content {
-  padding: 16px;
+  padding: 0;
+  background: #fff;
 }
 
 .item-content .title {
