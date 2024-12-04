@@ -620,6 +620,10 @@
   margin-top: -6px;
 }
 
+.countdown-doubledot {
+  content: ':';
+}
+
 /* access */
 
 .access-section {
