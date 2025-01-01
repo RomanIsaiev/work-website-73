@@ -219,5 +219,5 @@ function initializeClock(id, endtime) {
 }
 
 // Укажите дату и время, до которого нужно отсчитывать
-const deadline = new Date('December 21, 2024 18:00:00').getTime();
+const deadline = new Date('January 4, 2024 18:00:00').getTime();
 initializeClock('countdown-one', deadline);
